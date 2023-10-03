@@ -471,24 +471,54 @@ main {
     margin: 1rem auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px var(--padding-small);
+}
+
+@media screen and (min-width: 650px) {
+    .footer__container {
+        flex-wrap: nowrap;
+    }
 }
 
 .footer__list {
     display: flex;
     flex-direction: column;
+    flex-basis: 40%;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 650px) {
+    .footer__list {
+        flex-basis: 20%;
+        margin: 0;
+    }
 }
 
 .footer__list-header {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-bottom: 3px;
+}
+
+@media screen and (min-width: 800px) {
+    .footer__list-header {
+        font-size: 0.9rem;
+    }
 }
 
 .footer__list-item {
     margin: 3px 0;
     color: #111;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 300;
     margin-top: 3px;
+}
+
+@media screen and (min-width: 800px) {
+    .footer__list-item {
+        font-size: 0.9rem;
+    }
 }
 
 .footer__app-store-icons {
