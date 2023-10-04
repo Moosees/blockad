@@ -80,6 +80,7 @@ body {
             var(--color-main-1));
     font-size: 0;
     background-clip: text;
+    /* not great */
     -webkit-background-clip: text;
     color: transparent;
     text-transform: uppercase;
