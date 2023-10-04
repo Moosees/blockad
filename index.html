@@ -1,348 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./style.css" type="text/css" />
-        <title>Blockad</title>
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__container">
-                <section class="header__logo"><a href="#">Blockad</a></section>
-                <section class="header__categories">
-                    <button class="header__categories-button">
-                        Kategorier
-                        <span
-                            class="material-symbols-outlined header__categories-arrow"
-                        >
-                            keyboard_arrow_down
-                        </span>
-                    </button>
-                    <dialog class="header__categories-dialog">
-                        <div class="header__categories-dialog-container">
-                            <h4>Fordon</h4>
-                            <a href="#">Kattbuss</a>
-                            <a href="#">Skottkärra</a>
-                            <h4>Djur</h4>
-                            <a href="#">Capybara</a>
-                            <a href="#">Drake</a>
-                        </div>
-                    </dialog>
-                </section>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item header__nav-item--strong">
-                            <a href="#">
-                                <span
-                                    class="header__nav-icon material-symbols-outlined"
-                                >
-                                    add_circle
-                                </span>
-                                <span>Ny annons</span>
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#">
-                                <span
-                                    class="header__nav-icon material-symbols-outlined"
-                                    >search
-                                </span>
-                                <span>Annonser</span>
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#">
-                                <span
-                                    class="header__nav-icon material-symbols-outlined"
-                                >
-                                    chat
-                                </span>
-                                <span>Meddellanden</span>
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#">
-                                <span
-                                    class="header__nav-icon material-symbols-outlined"
-                                >
-                                    notifications
-                                </span>
-                                <span>Bevakningar</span>
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#">
-                                <span
-                                    class="header__nav-icon material-symbols-outlined"
-                                >
-                                    person
-                                </span>
-                                <span>Logga in</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section class="hero">
-                <div class="hero__container">
-                    <form class="hero__search-form" action="" method="post">
-                        <h1 class="hero__main-header">
-                            Välkommen till Blockad
-                        </h1>
-                        <label class="hero__search-form-label" for="search"
-                            >Sök</label
-                        >
-                        <input
-                            class="hero__search-form-input"
-                            type="text"
-                            name="search"
-                            id="search"
-                            placeholder="Vad vill du söka efter?"
-                        />
-                        <label class="hero__search-form-label" for="location"
-                            >Välj plats</label
-                        >
-                        <select
-                            class="hero__search-form-select"
-                            name="location"
-                            id="location"
-                        >
-                            <option value="allt">Överallt</option>
-                            <option value="norr">Norr</option>
-                            <option value="söder">Söder</option>
-                        </select>
-                        <button class="hero__search-form-submit" type="submit">
-                            Hitta annonser
-                        </button>
-                    </form>
-                    <article class="hero__cta">
-                        <h2 class="hero__cta-header">
-                            <a href="#">Vad väntar du på?</a>
-                        </h2>
-                        <p class="hero__cta-content">
-                            <a href="#"
-                                >Lorem ipsum dolor sit amet consectetur</a
-                            >
-                        </p>
-                    </article>
-                </div>
-            </section>
-            <section class="categories-list">
-                <div class="categories-list__header">
-                    <h2>Upptäck våra kategorier</h2>
-                    <a href="#">Alla kategorier &gt;</a>
-                </div>
-                <ul class="categories-list__content">
-                    <li class="categories-list__item">
-                        <a href="#">
-                            <span class="material-symbols-outlined">
-                                directions_car </span
-                            >Fordon
-                        </a>
-                    </li>
-                    <li class="categories-list__item">
-                        <a href="#">
-                            <span class="material-symbols-outlined"> pets </span
-                            >Djur
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="external-ad">
-                <div class="external-ad__info-container">
-                    <span>Annons</span>
-                    <span class="material-symbols-outlined"> settings </span>
-                </div>
-                <img
-                    src="https://images.unsplash.com/photo-1591102972305-213abaa76d6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80"
-                    alt="Annons"
-                />
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Odio, adipisci?
-                </p>
-            </section>
-            <section class="blog-articles">
-                <h3 class="blog-articles__header">
-                    <a href="#">Till alla galenskaper &gt;</a>
-                </h3>
-                <div class="blog-articles__content">
-                    <article class="blog-articles__card">
-                        <img
-                            class="blog-articles__card-image"
-                            src="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2031&q=80"
-                            alt="Sko före tillagning"
-                        />
-                        <div class="blog-articles__card-content">
-                            <h5>Ät en sko</h5>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </article>
-                    <article class="blog-articles__card">
-                        <img
-                            class="blog-articles__card-image"
-                            src="https://images.unsplash.com/photo-1636368208791-17b81ed832d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1929&q=80"
-                            alt="En lampa"
-                        />
-                        <div class="blog-articles__card-content">
-                            <h5>Bo i en lampa</h5>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </article>
-                    <article class="blog-articles__card">
-                        <img
-                            class="blog-articles__card-image"
-                            src="https://images.unsplash.com/photo-1509396591411-549811e332fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
-                            alt="En lampa"
-                        />
-                        <div class="blog-articles__card-content">
-                            <h5>Jaga din egen skugga</h5>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-            <section class="blog-articles">
-                <h4 class="blog-articles__header">
-                    <a href="#">Hitta ett jobb &gt;</a>
-                </h4>
-                <div class="blog-articles__content">
-                    <article class="blog-articles__card">
-                        <img
-                            class="blog-articles__card-image"
-                            src="https://images.unsplash.com/photo-1516959235296-c129e4fb6d57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                            alt="Smutsigt fönster"
-                        />
-                        <div class="blog-articles__card-content">
-                            <h5>Fönsternedsmutsare</h5>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </article>
-                    <article class="blog-articles__card">
-                        <img
-                            class="blog-articles__card-image"
-                            src="https://images.unsplash.com/photo-1623084921164-4a8c5c37a912?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
-                            alt="Saft"
-                        />
-                        <div class="blog-articles__card-content">
-                            <h5>Saftblandare</h5>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </article>
-                    <article class="blog-articles__card">
-                        <img
-                            class="blog-articles__card-image"
-                            src="https://images.unsplash.com/photo-1610878785620-3ab2d3a2ae7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2020&q=80"
-                            alt="En lampa"
-                        />
-                        <div class="blog-articles__card-content">
-                            <h5>Elektronik-odlare</h5>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <section class="footer__container">
-                <ul class="footer__list">
-                    <li class="footer__list-header">
-                        <h3><a href="#">Säkerhet</a></h3>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Kundsäkerhet</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Frakt</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Vindskydd</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Brandsläckare</a>
-                    </li>
-                </ul>
-                <ul class="footer__list">
-                    <li class="footer__list-header">
-                        <h3><a href="#">Villkor</a></h3>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Användarvillkor</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Cookies</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Chocolate chip cookies</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Recept</a>
-                    </li>
-                </ul>
-                <ul class="footer__list">
-                    <li class="footer__list-header">
-                        <h3><a href="#">För företag</a></h3>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">För företag</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Mot företag</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Öppna butik</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Öppna dörr</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Öppna fönster</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Stäng vad som helst</a>
-                    </li>
-                </ul>
-                <ul class="footer__list">
-                    <li class="footer__list-header">
-                        <h3><a href="#">Blockad</a></h3>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Om Blockad</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Kontakta oss</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Jobba hos oss</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Spela padel med oss</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#">Sjung i vår kör</a>
-                    </li>
-                </ul>
-            </section>
-            <section class="footer__app-store-icons">
-                <button>
-                    <span class="material-symbols-outlined"> robot </span>
-                </button>
-                <button>
-                    <span class="material-symbols-outlined"> nutrition </span>
-                </button>
-            </section>
-            <section class="footer__legal">
-                <p>Legal mumbojumbo. <a href="#">Läs mer</a></p>
-            </section>
-        </footer>
 
-        <!-- <script src="./script.js"></script> -->
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Blockad</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <section class="header__logo"><a href="#">Blockad</a></section>
+            <section class="header__categories">
+                <button class="header__categories-button">
+                    Kategorier
+                    <span class="material-symbols-outlined header__categories-arrow">
+                        keyboard_arrow_down
+                    </span>
+                </button>
+                <dialog class="header__categories-dialog">
+                    <div class="header__categories-dialog-container">
+                        <h4>Fordon</h4>
+                        <a href="#">Kattbuss</a>
+                        <a href="#">Skottkärra</a>
+                        <h4>Djur</h4>
+                        <a href="#">Capybara</a>
+                        <a href="#">Drake</a>
+                    </div>
+                </dialog>
+            </section>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item header__nav-item--strong">
+                        <a href="#">
+                            <span class="header__nav-icon material-symbols-outlined">
+                                add_circle
+                            </span>
+                            <span>Ny annons</span>
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">
+                            <span class="header__nav-icon material-symbols-outlined">search
+                            </span>
+                            <span>Annonser</span>
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">
+                            <span class="header__nav-icon material-symbols-outlined">
+                                chat
+                            </span>
+                            <span>Meddellanden</span>
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">
+                            <span class="header__nav-icon material-symbols-outlined">
+                                notifications
+                            </span>
+                            <span>Bevakningar</span>
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">
+                            <span class="header__nav-icon material-symbols-outlined">
+                                person
+                            </span>
+                            <span>Logga in</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <form class="hero__search-form" action="" method="post">
+                    <h1 class="hero__main-header">
+                        Välkommen till Blockad
+                    </h1>
+                    <label class="hero__search-form-label" for="search">Sök</label>
+                    <input class="hero__search-form-input" type="text" name="search" id="search"
+                        placeholder="Vad vill du söka efter?">
+                    <label class="hero__search-form-label" for="location">Välj plats</label>
+                    <select class="hero__search-form-select" name="location" id="location">
+                        <option value="allt">Överallt</option>
+                        <option value="norr">Norr</option>
+                        <option value="söder">Söder</option>
+                    </select>
+                    <button class="hero__search-form-submit" type="submit">
+                        Hitta annonser
+                    </button>
+                </form>
+                <article class="hero__cta">
+                    <h2 class="hero__cta-header">
+                        <a href="#">Vad väntar du på?</a>
+                    </h2>
+                    <p class="hero__cta-content">
+                        <a href="#">Lorem ipsum dolor sit amet consectetur</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="categories-list">
+            <div class="categories-list__header">
+                <h2>Upptäck våra kategorier</h2>
+                <a href="#">Alla kategorier &gt;</a>
+            </div>
+            <ul class="categories-list__content">
+                <li class="categories-list__item">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            directions_car </span>Fordon
+                    </a>
+                </li>
+                <li class="categories-list__item">
+                    <a href="#">
+                        <span class="material-symbols-outlined"> pets </span>Djur
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="external-ad">
+            <div class="external-ad__info-container">
+                <span>Annons</span>
+                <span class="material-symbols-outlined"> settings </span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1591102972305-213abaa76d6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80"
+                alt="Annons">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Odio, adipisci?
+            </p>
+        </section>
+        <section class="blog-articles">
+            <h3 class="blog-articles__header">
+                <a href="#">Till alla galenskaper &gt;</a>
+            </h3>
+            <div class="blog-articles__content">
+                <article class="blog-articles__card">
+                    <img class="blog-articles__card-image"
+                        src="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2031&q=80"
+                        alt="Sko före tillagning">
+                    <div class="blog-articles__card-content">
+                        <h5>Ät en sko</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </article>
+                <article class="blog-articles__card">
+                    <img class="blog-articles__card-image"
+                        src="https://images.unsplash.com/photo-1636368208791-17b81ed832d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1929&q=80"
+                        alt="En lampa">
+                    <div class="blog-articles__card-content">
+                        <h5>Bo i en lampa</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </article>
+                <article class="blog-articles__card">
+                    <img class="blog-articles__card-image"
+                        src="https://images.unsplash.com/photo-1509396591411-549811e332fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                        alt="En lampa">
+                    <div class="blog-articles__card-content">
+                        <h5>Jaga din egen skugga</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="blog-articles">
+            <h4 class="blog-articles__header">
+                <a href="#">Hitta ett jobb &gt;</a>
+            </h4>
+            <div class="blog-articles__content">
+                <article class="blog-articles__card">
+                    <img class="blog-articles__card-image"
+                        src="https://images.unsplash.com/photo-1516959235296-c129e4fb6d57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="Smutsigt fönster">
+                    <div class="blog-articles__card-content">
+                        <h5>Fönsternedsmutsare</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </article>
+                <article class="blog-articles__card">
+                    <img class="blog-articles__card-image"
+                        src="https://images.unsplash.com/photo-1623084921164-4a8c5c37a912?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                        alt="Saft">
+                    <div class="blog-articles__card-content">
+                        <h5>Saftblandare</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </article>
+                <article class="blog-articles__card">
+                    <img class="blog-articles__card-image"
+                        src="https://images.unsplash.com/photo-1610878785620-3ab2d3a2ae7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2020&q=80"
+                        alt="En lampa">
+                    <div class="blog-articles__card-content">
+                        <h5>Elektronik-odlare</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__list-header">
+                    <h3><a href="#">Säkerhet</a></h3>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Kundsäkerhet</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Frakt</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Vindskydd</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Brandsläckare</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__list-header">
+                    <h3><a href="#">Villkor</a></h3>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Användarvillkor</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Cookies</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Chocolate chip cookies</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Recept</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__list-header">
+                    <h3><a href="#">För företag</a></h3>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">För företag</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Mot företag</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Öppna butik</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Öppna dörr</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Öppna fönster</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Stäng vad som helst</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__list-header">
+                    <h3><a href="#">Blockad</a></h3>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Om Blockad</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Kontakta oss</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Jobba hos oss</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Spela padel med oss</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Sjung i vår kör</a>
+                </li>
+            </ul>
+        </section>
+        <section class="footer__app-store-icons">
+            <button>
+                <span class="material-symbols-outlined"> robot </span>
+            </button>
+            <button>
+                <span class="material-symbols-outlined"> nutrition </span>
+            </button>
+        </section>
+        <section class="footer__legal">
+            <p>Legal mumbojumbo. <a href="#">Läs mer</a></p>
+        </section>
+    </footer>
+
+    <!-- <script src="./script.js"></script> -->
+</body>
+
 </html>
